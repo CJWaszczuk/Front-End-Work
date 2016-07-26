@@ -1,0 +1,606 @@
+body,html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* --- General Styling --- */
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.container {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.row {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.col-4 {
+	display: inline-block;
+	width: 33.3333333333%;
+	float: left;
+	position: relative;
+}
+
+.col-6 {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.col-8 {
+	display: inline-block;
+	width: 66.6666666667%;
+	float: left;
+	position: relative;
+}
+
+.col-22 {
+	display: inline-block;
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+.col-34 {
+	display: inline-block;
+	width: 34%;
+	float: left;
+	position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ajax-load {
+	font-family: 'Raleway';
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #343434;
+	font-weight: 700;
+	border: 1px solid #bdbdbd;
+	border-radius: 4px;
+	padding: 15px 15px;
+	background: white;
+	margin-top: 100px;
+	transition: 0.5s;
+}
+
+.ajax-load:hover {
+	background: #d1d1d1;
+	cursor: pointer;
+}
+
+/* --- Navigation --- */
+
+#navigation {
+	display: table;
+	clear: both;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.brand {
+	float: left;
+}
+
+.brand img {
+	height: 32px;
+	padding: 23px;
+}
+
+.nav-items {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item {
+	list-style: none;
+	display: inline-block;
+	color: white;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: bold;
+	font-size: 14px;
+	padding: 30px 20px;
+	letter-spacing: 0.04em;
+}
+
+.nav-item a {
+	border: 1px solid white;
+	padding: 10px 40px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.nav-item a:hover {
+	background: #b7b7b7;
+	color: white;
+	cursor: pointer;
+}
+
+/* ---- Hero Header Section --- */
+
+#hero-section {
+	height: 90%;
+	width: 100%;
+	background: url('../assets/header-background.png');
+	background-size: cover;
+	background-position: 50% 55%;
+	position: relative;
+}
+
+.hero-container {
+	margin: 0;
+	text-align: center;
+	color: white;
+	position: relative;
+	text-transform: uppercase;
+	top: calc(50% - 112px);
+}
+
+.hero-container h1 {
+	font-family: 'Raleway';
+	font-size: 72px;
+	line-height: 70px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	margin: 0;
+}
+
+.hero-container h2 {
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin: 0;
+	padding-bottom: 61px;
+}
+
+.hero-container input {
+	background: white;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	font-family: 'Raleway';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #717171;
+	width: 30%;
+	padding: 15px 0 15px 10px;
+}
+
+.hero-container button {
+	background: #e7434e;
+	color: white;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 18px;
+	border: none;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 15px 15px;
+	margin-left: -4px;
+	transition: 0.5s;
+}
+
+.hero-container button:hover {
+	background: #eb666f;
+	cursor: pointer;
+}
+
+/* --- Top Destination Section --- */
+
+#top-dest-section {
+	padding: 100px 0;
+	display: block;
+	text-align: center;
+}
+
+#top-dest-section h1 {
+	font-family: 'Raleway';
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin: 0;
+	color: #343435;
+	padding-bottom: 20px;
+}
+
+#top-dest-section h2 {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin: 0;
+	color: #717171;
+	padding-bottom: 87px;
+}
+
+.dest-card {
+	height: 360px;
+	border-radius: 6px;
+}
+
+.dest-card-info {
+	font-family: 'Raleway';
+	color: white;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	text-align: left;
+}
+
+.dest-card-info h3 {
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin: 10px 0;
+}
+.dest-card-info h4 {
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin: 0;
+}
+
+.boats {
+	color: white;
+	position: absolute;
+	background: #e7434e;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	border-radius: 6px;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	top: 25px;
+	left: 25px;
+}
+
+.boats img {
+	height: 20px;
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+}
+
+.featured {
+	background: url('../assets/top-dest-5.png');
+	background-size: cover;
+	background-position: 45% 23%;
+	width: calc(66.6666666667% - 15px);
+	margin-right: 15px;
+}
+
+.row:nth-of-type(2) {
+	margin-top: 30px;
+}
+
+.dest-card:nth-of-type(2) {
+	background: url('../assets/top-dest-4.png');
+	width: calc(33.3333333333% - 15px);
+	background-size: cover;
+	background-position: 45% 23%;
+	margin-left: 15px;
+}
+
+.row:nth-of-type(2) .dest-card:nth-of-type(1) {
+	background: url('../assets/top-dest-1.png');
+    width: calc(33.3333333333% - 20px);
+    background-position: 7% 100%;
+    margin-right: 20px;
+}
+
+.row:nth-of-type(2) .dest-card:nth-of-type(2) {
+	background: url('../assets/top-dest-2.png');
+	width: calc(33.3333333333% - 20px);
+	background-size: cover;
+	background-position: 100% 23%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.row:nth-of-type(2) .dest-card:nth-of-type(3) {
+	background: url('../assets/top-dest-3.png');
+	background-size: cover;
+	background-position: 45% 23%;
+	width: calc(33.3333333333% - 20px);
+	margin-left: 20px;
+}
+
+/* --- Banner Boat Section --- */
+
+#banner-boat-section {
+	height: 60%;
+	width: 100%;
+	background: url('../assets/mid-bottom-background.png');
+	background-size: cover;
+	background-position: 50% 60%;
+	position: relative;
+}
+
+.banner-boat-container {
+	margin: 0;
+	text-align: center;
+	color: white;
+	position: relative;
+	text-transform: uppercase;
+	top: calc(50% - 112px);
+}
+.banner-boat-container h1 {
+	font-family: 'Raleway';
+	font-size: 72px;
+	line-height: 70px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	margin: 0;
+}
+
+.banner-boat-container h2 {
+	font-family: 'Open Sans';
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin: 0;
+	padding-bottom: 61px;
+}
+
+.banner-boat-container button {
+	background: #e7434e;
+	color: white;
+	border-radius: 4px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 18px;
+	border: none;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	padding: 15px 15px;
+	margin-left: -4px;
+	transition: 0.5s;
+}
+
+.banner-boat-container button:hover {
+	background: #eb666f;
+	cursor: pointer;
+}
+
+/* --- Featured Boats Section --- */
+
+#featured-boats-section {
+	padding: 100px 0;
+	display: block;
+	text-align: center;
+}
+
+.boat-card {
+	height: 360px;
+	border-radius: 6px;
+}
+
+.boat-card-info {
+	color: white;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	text-align: left;
+}
+
+.boat-card-info h3 {
+	font-family: 'Raleway';
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin: 0;
+}
+
+.boat-card-info .fa {
+	font-size: 16px;
+}
+
+.boat-card-info p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+}
+
+.prices {
+	color: white;
+	position: absolute;
+	background: #e7434e;
+	font-family: 'Open Sans';
+	font-size: 18px;
+	border-radius: 6px;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	top: 25px;
+	left: 25px;
+}
+
+#featured-boats-section h1 {
+	font-family: 'Raleway';
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin: 0;
+	color: #343435;
+	padding-bottom: 20px;
+}
+
+#featured-boats-section h2 {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin: 0;
+	color: #717171;
+	padding-bottom: 87px;
+}
+
+.row:nth-of-type(1) .boat-card:nth-of-type(1) {
+	background: url('../assets/boat-4.png') no-repeat;
+	background-size: 100% 100%;
+    width: calc(50% - 20px);
+    background-position: 7% 101%;
+    margin-right: 20px;
+}
+.row:nth-of-type(1) .boat-card:nth-of-type(2) {
+	background: url('../assets/boat-3.png') no-repeat;
+	background-size: 100% 100%;
+    width: calc(50% - 20px);
+    background-position: 7% 101%;
+    margin-left: 20px;
+}
+.row:nth-of-type(2) .boat-card:nth-of-type(1) {
+	background: url('../assets/boat-1.png') no-repeat;
+	background-size: 100% 100%;
+    width: calc(50% - 20px);
+    background-position: 7% 101%;
+    margin-right: 20px;
+}
+.row:nth-of-type(2) .boat-card:nth-of-type(2) {
+	background: url('../assets/boat-2.png') no-repeat;
+	background-size: 100% 100%;
+    width: calc(50% - 20px);
+    background-position: 7% 101%;
+    margin-left: 20px;
+}
+
+/* --- Footer --- */
+
+.border {
+	width: 100%;
+	margin-bottom: -4px;
+}
+footer {
+	background: #404040;
+	padding: 30px 0 40px;
+}
+
+footer h3 {
+	font-family: 'Raleway';
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: white;
+	text-align: left;
+}
+
+footer p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	font-size: 14px;
+	line-height: 34px;
+	color: white;
+	text-align: left;
+}
+
+.social-icons {
+	margin-top: 20px;
+}
+
+.social-icons a {
+	background: #717171;
+    width: 50px !Important;
+    display: inline-block;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+	background: #eb666f;
+	cursor: pointer;
+}
+
+.social-icons .fa {
+	display: block;
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    top: calc(50% - 12px);
+}
+
+footer input {
+	background: white;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #717171;
+	width: 60%;
+	padding: 10px 0 10px 10px;
+}
+
+footer button {
+	background: #e7434e;
+	color: white;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	border: none;
+	line-height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	padding: 10px 10px;
+	margin-left: -4px;
+	transition: 0.5s;
+}
+
+footer button:hover {
+	background: #eb666f;
+	cursor: pointer;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href = "css/styles.css" />
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <title> Channel Media | Your Last Stop For All The Most Recent News </title>
+        <script> 
+            $(document).ready(function(){
+
+                function adjustImages() {
+                    var containerHeight = $(" #info .info-container").outerHeight();
+                    $('#info .col-6:nth-of-type(2)').css("height", containerHeight);
+
+                    var containerHeight2 = $(" #methods .info-container").outerHeight();
+                    $('#methods .col-6').css("height", containerHeight2);
+                }
+
+                adjustImages();
+
+                $(window).on('resize orientationChange', function(event) {
+                    adjustImages();
+                });
+
+                if ($(window).width() < 768) {
+                    $('#hero').css("height", $(window).height());
+                }
+            });
+        </script>
+    </head>
+    <body>
+    	<header id = "navigation">
+    		<div class = "container">
+    			<div class = "nav-brand">
+    				<!-- <img src = "assets/channel-logo.png" /> -->
+    				<span> Channel Media Agency </span>
+    			</div>
+    			<ul id = "nav-items">
+    				<li class = "nav-item" data-transition=""> Home </li>
+    				<li class = "nav-item" data-transition=""> Info </li>
+    				<li class = "nav-item" data-transition=""> Methods </li>
+    				<li class = "nav-item" data-transition=""> Partners </li>
+    				<li class = "nav-item" data-transition=""> Contact </li>
+    			</ul>
+    		</div>
+    	</header>
+    	<section id = "hero">
+            <div class = "hero-container">
+                <h1> The Future of News </h1>
+                <h2> The most effective way to help your work engage with millions around the world. </h2>
+                <button> Find Out More</button>
+            </div>
+    		<div class = "overlay"></div>
+    	</section>
+        <!-- 
+    	<section id = "partners">
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    		<div class = "col-2">
+    			<img src = "http://logok.org/wp-content/uploads/2015/02/BBC-logo.png" />
+    		</div>
+    	</section>
+    -->
+    	<section id = "info">
+    		<!-- <div class = "container">
+    			<div class = "statistics">
+    			</div>
+    		</div> -->
+    		<div class = "col-6">
+    			<div class = "info-container">
+	    			<h1> One Stop for all the worldwide news </h1>
+	    			<h2> Here at Channel, we pride ourselves on being able to deliver the most recent news from multiple sources around the world. Whether it be the regional drama or the latest sports transfers, we will be the place to find it. </h2>
+    			</div>
+    		</div>
+    		<div class = "col-6">
+    		</div>
+    	</section>
+    	<section id = "methods">
+    		<div class = "col-6">
+    		</div>
+    		<div class = "col-6">
+    			<div class = "info-container">
+	    			<h1> Bringing your work to the forefront </h1>
+		    		<h2> Using our cutting edge technology. We can ensure that your publishing channels receive the publicity that they deserve. Our platform caters to all type of journalism to allow for the complete viewing experience. </h2>
+	    		</div>
+    		</div>
+    	</section>
+        <!-- 
+    	<section id ="call-to-action">
+    		<h1> Interested in working with us? </h1> 
+    		<button> Contact Us </button>
+    	</section> -->
+        <section id = "contact">
+            <div class = "container">
+                <h1> Let's Chat </h1>
+                <h2> Fill this out so we can work out what we can do for you.</h2>
+                <form>
+                    <input type = "text" name = "fname" placeholder = "First Name"/>
+                    <input type = "text" name = "lname" placeholder = "Last Name"/>
+                    <input type = "text" name = "email" placeholder = "Email"/>
+                    <input type = "text" name = "subject" placeholder = "Subject"/>
+                    <textarea rows = "3" name = "message" placeholder="Message"></textarea>
+                </form>
+                <button> Send </button>
+                <div class = "col-3">
+                    <h3> New Business </h3>
+                    <li> business@channelmediaagency.com </li>
+                    <li> (+44) 7975 664946 </li>
+                </div>
+                <div class = "col-3">
+                    <h3> Contact Us </h3>
+                    <li> 30 Park Crescent, Barry </li>
+                    <li> CF626HE </li>
+                    <li> contact@channelmediaagency.com </li>
+                    <li> (+44) 7975 664946 </li>
+                </div>
+                <div class = "col-3">
+                    <h3> Social <h3>
+                </div>
+            </div>
+        </section>
+   	</body>
+</html>

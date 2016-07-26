@@ -1,0 +1,308 @@
+/*          Navbar Stuff          */
+
+.navbar-custom {
+	background-color: rgba(34,34,34,0.7);
+	border-radius: 0;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.icon-bar {
+	color:white;
+}
+
+.navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-nav>li>a:hover {
+	background-color: #222222;
+	border:none;
+	color: white;
+}
+
+/*          Header          */
+
+#header h1 {
+	font-size: 6em;
+	line-height: 1em;
+	color: #ffffff;
+	text-shadow: 1px 1px 4px #000000;
+	font-weight:bold;
+	padding-bottom: 20px;
+}
+
+#header .banner {
+	padding-top: 80px;
+	text-align: center;
+}
+
+#header .lead {
+	text-align: center;
+	font-size: 24px;
+	line-height: 34px;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
+	padding: 15px 10px 20px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+#header {
+	background: url("../img/background_header.png") center top;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	min-height: 700px;
+	position: relative;
+}
+
+#stockists {
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	background-color: #222222;
+	max-height: 100px;
+
+}
+
+#header h1 {
+	color:white;
+}
+
+/*          Footer          */
+
+#footer {
+	background-color: #222222;
+	padding: 30px 0px 30px 0px;
+}
+
+/*          Core         */
+
+body {
+	background-color: #f0f0f0;
+	font-family: Merriweather;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+/*          Sections          */
+.section {
+	text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+.section h2 {
+	margin-bottom: 60px;
+	color: #ffffff;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.lead {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*          Intro Section          */
+
+#intro h2 {
+	margin-bottom: 30px;
+	color: #000000;
+	font-size: 32px;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+#intro {
+	background-color: #f0f0f0;
+    margin-top:-20px;
+}
+
+#intro .lead {
+	margin-top: -10px;
+}
+
+/*          Section 1          */
+
+#benefits {
+    background-color: #f0f0f0;
+}
+
+
+#benefits h3 {
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: left;
+	color: #000000;
+}
+
+#benefits h2 {
+	margin-bottom: 30px;
+	color: #000000;
+	font-size: 32px;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+#benefits p {
+	text-align: left;
+}
+
+.benefits-row {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*          Team Section          */
+
+#team {
+	background: url(../img/background_team.png) center top;
+    background-size: cover; 
+}
+
+#team img {
+	max-width: 150px;
+}
+
+#team p {
+	color:white;
+}
+
+.teamMember {
+	margin-bottom: 20px;
+}
+
+#team .personName {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.team {
+	margin-top: 40px;
+}
+
+/*          Testimonials Section          */
+
+.testimonial-author {
+	font-weight: bold;
+	color: white;
+	margin-bottom: 50px;
+}
+
+#testimonials {
+	background: url(../img/background_testimonials.png) center top;
+    background-size: cover; 
+}
+
+#testimonials p {
+	color: white;
+}
+
+#testimonials .lead {
+	margin-bottom: 40px;
+}
+/*          Contact Section          */
+
+#contact h2 {
+	margin-bottom: 30px;
+	color: #000000;
+	font-size: 32px;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+#contact h3 {
+	font-size: 22px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	color: #000000;
+}
+
+#contactContainer {
+	margin-top: -20px;
+	margin-bottom: -10px;
+}
+
+#spacer {
+	margin-bottom: 30px;
+}
+
+/*          Parallax Slides          */
+#slide1	{
+	background-image: url(../img/background_parallax_1.jpg);
+}
+.slide {
+	background-size: cover !important;
+	min-height: 400px;
+	background-attachment: fixed !important;
+}
+
+#slide2 {
+	background-image: url(../img/background_parallax_2.jpg);
+}
+
+/*          Google Maps          */
+#map-canvas {
+	position: relative;
+	padding-bottom: 26.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+ 
+.map-container iframe, .map-container object, .map-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*          Media Queries          */
+
+@media screen and (max-width: 767px) {
+    #stockists, #map-canvas, #header p, nav  {
+        display: none;
+    }
+
+    #benefits h3, #benefits p {
+    	text-align: center;
+    }
+
+    #header { 
+    	min-height: 450px;
+    }
+}

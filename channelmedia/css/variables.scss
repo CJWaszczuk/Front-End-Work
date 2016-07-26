@@ -1,0 +1,37 @@
+$font-primary: 'ProximaNova';
+$font-secondary: 'Lato';
+
+$border-color: #ccc;
+$box-shadow: 0 0 8px rgba(0,0,0,0.2);
+
+$break-small: 544px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extra-large: 1200px;
+$break-hd: 1500px;
+
+@mixin border-radius($radius) {
+   -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   border-radius: $radius;
+}
+
+@mixin transition($args...) {
+   -webkit-transition: $args;
+   -moz-transition: $args;
+   -ms-transition: $args;
+   -o-transition: $args;
+   transition: $args;
+}
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

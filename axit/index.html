@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Axit </title>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" href="assets/customize.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src ="js/javascript.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<script>
+			$(document).ready(function(){
+				$(".tabButtons button").click(function(){
+					$(".tabButtons button").removeClass("button active");
+					$(this).addClass("button active");
+					if ($( ".tabButton1" ).hasClass( "button active" ) == true){
+						$(".tab2").fadeOut( "slow" );
+						$(".tab3").fadeOut( "slow" );
+						$(".tab1").fadeIn( "slow" );
+					} else if ($( ".tabButton2" ).hasClass( "button active" ) == true) {
+						$(".tab1").fadeOut( "slow" );
+						$(".tab3").fadeOut( "slow" );
+						$(".tab2").fadeIn( "slow" );
+					} else if ($( ".tabButton3" ).hasClass( "button active" ) == true) {
+						$(".tab2").fadeOut( "slow" );
+						$(".tab1").fadeOut( "slow" );
+						$(".tab3").fadeIn( "slow" );
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class = "navigation">
+			<div class = "container">
+				<div class = "navbarBrand">
+					<img class= "brand" src = "assets/logo.png" alt = "brand" />
+				</div>
+				<div class = "navbar-elements">
+					<ul class = "navbar-items">
+						<li class = "featuresScroll"> Features </li>
+						<li class = "aboutScroll"> About </li>
+						<li class = "pricingScroll"> Pricing </li>
+						<li class = "reviewsScroll"> Reviews </li>
+						<li class = "contactScroll"> Contact </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class = "banner" role = "banner">
+			<div class = "container">
+				<div class = 'col-md-6'>
+					<img class = "bannerLogo" src = "assets/logo.png" alt = "logo" /> 
+					<h1 class = "bannerTitle"> Modern Axure Templates For Beautiful Prototypes </h1> 
+					<hr>
+					<h2> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+						euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+						accumsan et viverra justo commodo.
+					</h2>
+					<button> Download </button>
+				</div>
+				<div class = 'col-md-6'>
+					<div class = "trialContainer">
+						<h3> Try Your <span> FREE </span> Trial Today </h3>
+						<input type = "text" placeholder = "Name" />
+						<input type = "text" placeholder = "Email" />
+						<input type = "text" placeholder = "Password" />
+						<button> Get Started </button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class = "brandBar">
+			<div class = "container">
+				<div class = "col-md-4">
+					<h3> Social Media </h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+						Aenean euismod bibendum laoreet.
+					</p>
+				</div>
+				<div class = "col-md-8">
+					<div class = "icons">
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-google-plus"></i>
+						<i class="fa fa-pinterest"></i>
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-stumbleupon"></i>
+						<i class="fa fa-rss"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class = "tabFeatures">
+			<div class = "container">
+				<div class = "col-md-2 tabButtons">
+					<button class = "active tabButton1"> TAB 1</button>
+					<button class = "tabButton2"> TAB 2</button>
+					<button class = "tabButton3"> TAB 3</button>
+				</div>
+				<div class = "col-md-9 col-md-offset-1">
+					<div class = "row tabs">
+						<div class = "tab1">
+							<div class = "col-md-7">
+								<h2> Tabs with soft transitioning effect. </h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+									penatibus et magnis dis parturient montes.
+									<br><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. 
+								</p>
+								<button> Download </button>
+							</div>
+							<div class = "col-md-4 col-md-offset-1">
+								<img src = "assets/featuresImage1.png" alt = "featuresTab1Image" />
+							</div>
+						</div>
+						<div class = "tab2">
+							<div class = "col-md-7">
+								<h2> Tabs with soft transitioning effect 2. </h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+									penatibus et magnis dis parturient montes.
+									<br><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. 
+								</p>
+								<button> Download </button>
+							</div>
+							<div class = "col-md-4 col-md-offset-1">
+								<img src = "assets/featuresImage1.png" alt = "featuresTab1Image" />
+							</div>
+						</div>
+						<div class = "tab3">
+							<div class = "col-md-7">
+								<h2> Tabs with soft transitioning effect 3. </h2>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+									justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+									penatibus et magnis dis parturient montes.
+									<br><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+									bibendum laoreet. 
+								</p>
+								<button> Download </button>
+							</div>
+							<div class = "col-md-4 col-md-offset-1">
+								<img src = "assets/featuresImage1.png" alt = "featuresTab1Image" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class = "features2">
+			<div class = "container">
+				<div class = "col-md-5">
+					<img src = "assets/featuresImage2.png" alt = "features2Image" />
+				</div>
+				<div class = "col-md-6 col-md-offset-1">
+					<h2> Sub list section </h2>
+					<hr>
+					<p>
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+					    euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
+					    accumsan et viverra justo commodo.
+					</p>
+					<div class = "row">
+						<div class = "col-md-1">
+							<img src = "assets/listIcon1.png" alt = "features2Icon1" />
+						</div>
+						<div class = "col-md-10 col-md-offset-1">
+							<h3> Title </h3>
+							<p> 
+						    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Aenean euismod bibendum laoreet.
+							</p>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-md-1">
+							<img src = "assets/listIcon2.png" alt = "features2Icon2" />
+						</div>
+						<div class = "col-md-10 col-md-offset-1">
+							<h3> Title </h3>
+							<p> 
+						    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Aenean euismod bibendum laoreet. Proin gravida dolor 
+								sit amet lacus accumsan et viverra justo commodo.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class = "features3">
+			<div class = "container">
+				<div class = "col-md-6">
+					<h2> Standard picture section </h2>
+					<hr>
+					<p>
+					    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+						euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan 
+						et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis 
+						natoque penatibus et magnis dis parturient montes. 
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+						bibendum laoreet.
+					</p>
+				</div>
+				<div class = "col-md-6">
+					<img src = "assets/featuresImage3.png" alt = "features3Image" />
+				</div>
+			</div>
+		</section>
+		<section class = "process">
+			<div class = "container">
+				<h2> Why This is Awesome </h2>
+				<hr>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class = "col-md-4">
+					<img src = "assets/design.png" alt = "designIcon" />
+					<h3> Thoughtful Design </h3>
+					<p> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing 
+						elit. Aenean euismod bibendum laoreet. Proin gravida 
+						dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+				<div class = "col-md-4">
+					<img src = "assets/crafted.png" alt = "craftedIcon" />
+					<h3> Well Crafted </h3>
+					<p> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing 
+						elit. Aenean euismod bibendum laoreet. Proin gravida 
+						dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+				<div class = "col-md-4">
+					<img src = "assets/customize.png" alt = "customizeIcon" />
+					<h3> Easy to Customize </h3>
+					<p> 
+						Lorem ipsum dolor sit amet, consectetur adipiscing 
+						elit. Aenean euismod bibendum laoreet. Proin gravida 
+						dolor sit amet lacus accumsan et viverra.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class = "pricing">
+			<div class = "container">
+				<h2> Pricing Options </h2>
+				<hr>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class = "col-md-4">
+					<h4> Basic </h4>
+					<h3> <span class = "sign"> $ </span> 0 <br> <span> Free for life </span></h3>
+					<div class = "block"></div>
+					<p> 1GB of space</p>
+					<p> 10GB of bandwidth</p>
+					<p> 3 Websites</p>
+					<p> Basic customization</p>
+					<p> Wordpress integration</p>
+					<p> Email support</p>
+				</div>
+				<div class = "col-md-4 featured">
+					<h4> Professional </h4>
+					<h3> <span class = "sign"> $ </span> 19 <br> <span> Monthly Payment </span></h3>
+					<div class = "block2">
+						<p> OUR MOST POPULAR </p>
+					</div>
+					<p> 1GB of space</p>
+					<p> 10GB of bandwidth</p>
+					<p> 3 Websites</p>
+					<p> Basic customization</p>
+					<p> Wordpress integration</p>
+					<p> Email support</p>
+				</div>
+				<div class = "col-md-4">
+					<h4> Entreprise </h4>
+					<h3> <span class = "sign"> $  </span> 70 <br> <span> Monthly Payment </span></h3>
+					<div class = "block"></div>
+					<p> 1GB of space</p>
+					<p> 10GB of bandwidth</p>
+					<p> 3 Websites</p>
+					<p> Basic customization</p>
+					<p> Wordpress integration</p>
+					<p> Email support</p>
+				</div>
+			</div>
+		</section>
+		<section class = "reviews">
+			<div class = "container">
+				<h2> What Our Customers Are Saying </h2>
+				<hr>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class = "col-md-4">
+					<p> 
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit. 		
+					</p>
+					<div class = "arrow-down"></div>
+					<img src = "assets/avatar.png" alt = "avatar1" />
+					<h3> Jeremy H. <br> <span> Manager </span> </h3>
+				</div>
+				<div class = "col-md-4">
+					<p> 
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit. 		
+					</p>
+					<div class = "arrow-down"></div>
+					<img src = "assets/avatar.png" alt = "avatar1" />
+					<h3> John S. <br> <span> Freelancer </span> </h3>
+				</div>
+				<div class = "col-md-4">
+					<p> 
+						Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. Doloribus 
+						accusamus expedita repellat similique 
+						odio aspernatur ex, architecto eaque 
+						quo suscipit. 		
+					</p>
+					<div class = "arrow-down"></div>
+					<img src = "assets/avatar.png" alt = "avatar1" />
+					<h3> Susan W. <br> <span> Photographer </span> </h3>
+				</div>
+			</div>
+		</section>
+		<section class = "axure">
+			<div class = "container">
+				<h2> Stylish axure design </h2>
+				<hr>
+				<p> Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever! </p>
+				<button> Download </button>
+			</div>
+		</section>
+		<section class = "contact">
+			<div class = "container">
+				<h2> Contact Us </h2>
+				<hr>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class = "row">
+					<div class = "col-md-6">
+						<input type = "text" placeholder = "Name" />
+						<input type = "text" placeholder = "Email" />
+						<input type = "text" placeholder = "Subject" />
+					</div>
+					<div class = "col-md-6" >
+						<textarea placeholder = "Message" cols = "4"> Message </textarea>
+					</div>
+				</div>
+				<button> Send Message </button>
+			</div>
+		</section>
+		<footer>
+			<div class = "icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-google-plus"></i>
+				<i class="fa fa-pinterest"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-stumbleupon"></i>
+				<i class="fa fa-rss"></i>
+			</div>
+			<p> &copy; 2015 Axure Themes </p>
+		</footer>
+	</body>
+</html>
+
